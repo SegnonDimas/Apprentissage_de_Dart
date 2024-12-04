@@ -14,12 +14,35 @@ void main() {
   //déclaration de la variable nom dont la valeur initiale est Bob;
   var nom = "Bob";
 
-  // variable age de type entier
-  int age = 12;
-
   //afficher la valeur de la variable nom
   print(nom);
 
   // afficher le type de ma variable nom
   print(nom.runtimeType);
+
+  /* OPÉRATIONS SUR LES VARIABLES*/
+  /*
+    ++ : incrémentation
+  */
+  // opération d'incrémentation
+
+  // variable age de type entier
+  int age = 12;
+
+  age++; // age = age + 1;
+  print(age);
+
+  age += 5; //age = age + 5;
+  print(age);
+
+// opération d'incrémentation
+
+  // variable age de type entier
+  age = 12;
+
+  age--; // age = age - 1;
+  print(age);
+
+  age -= 5; //age = age - 5;
+  print(age);
 }
