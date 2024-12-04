@@ -23,6 +23,7 @@ void main() {
   /* OPÉRATIONS SUR LES VARIABLES*/
   /*
     ++ : incrémentation
+    -- : décrémentation
   */
   // opération d'incrémentation
 
