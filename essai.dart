@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   //Variables
   /*
@@ -15,10 +17,10 @@ void main() {
   var nom = "Bob";
 
   //afficher la valeur de la variable nom
-  print(nom);
+  //print(nom);
 
   // afficher le type de ma variable nom
-  print(nom.runtimeType);
+  //print(nom.runtimeType);
 
   /* OPÉRATIONS SUR LES VARIABLES*/
   /*
@@ -30,10 +32,10 @@ void main() {
   int age = 12;
 
   age++; // age = age + 1;
-  print(age);
+  //print(age);
 
   age += 5; //age = age + 5;
-  print(age);
+  //print(age);
 
 // opération d'incrémentation
 
@@ -41,8 +43,31 @@ void main() {
   age = 12;
 
   age--; // age = age - 1;
-  print(age);
+  //print(age);
 
   age -= 5; //age = age - 5;
-  print(age);
+
+  //print(age);
+
+  // LES STRINGS
+  /*
+  Les String : chaine de caractères
+
+    Les opérations sur les String
+      - contain() // vérifier si une chaine contient une autre
+      - split('') // diviser une chaine suivant le séparateur
+      - replaceAll('', '') // remplacer une portion de chaine  par une autre
+      - toUpperCase () // convertir toutes les lettres d'une chaine en MAJUSCULE
+      - toLowerCase () // convertir toutes les lettres d'une chaine en miniscule
+      - trim() // supprimer tous les espaces au début et à la fin d'une chaine
+  
+  */
+
+  String s1 = 'Ma string S1, c\'est spécial';
+  String s2 = "Ma string S2 c'est SPECIAL";
+  String recherche = ' ma';
+  List<String> list = ['Ma', 'Mon', 'Mes'];
+
+  print(s2);
+  print(list.join(' '));
 }
