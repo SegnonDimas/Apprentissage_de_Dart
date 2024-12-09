@@ -51,23 +51,26 @@ void main() {
 
   // LES STRINGS
   /*
-  Les String : chaine de caractères
+  LES LIST
 
-    Les opérations sur les String
-      - contain() // vérifier si une chaine contient une autre
-      - split('') // diviser une chaine suivant le séparateur
-      - replaceAll('', '') // remplacer une portion de chaine  par une autre
-      - toUpperCase () // convertir toutes les lettres d'une chaine en MAJUSCULE
-      - toLowerCase () // convertir toutes les lettres d'une chaine en miniscule
-      - trim() // supprimer tous les espaces au début et à la fin d'une chaine
-  
+  Opérations sur les List 
+    - add(valeur) // ajouter la valeur 'valeur' à la liste
+    - addAll(list) // ajouter les valeurs de la liste 'list' aux valeurs existantes de la liste initiale
+    - indexOf(valeur) // avoir l'index de la valeur 'valeur'
+    - removeAt(index) // supprimer l'élément à l'index 'index'
+    - clear() // supprimer tous les éléments de la liste 
+    - sort() //ranger les éléments de la liste (par défaut, on range par ordre croissant ou par ordre alphabétique)
+
+ 
   */
 
-  String s1 = 'Ma string S1, c\'est spécial';
-  String s2 = "Ma string S2 c'est SPECIAL";
-  String recherche = ' ma';
-  List<String> list = ['Ma', 'Mon', 'Mes'];
-
-  print(s2);
-  print(list.join(' '));
+  List<String> listString = ['String 1', 'String 2', 'String 3'];
+  List<int> listEntier = [5, 10, 0, -1, 8];
+  List<dynamic> listDynamic = ['2', 10];
+  List list = ['2', '15'];
+  //list.add(listString); // [2, 15, [String 1, String 2, String 3]]
+  list.addAll(listString); // [2, 15, String 1, String 2, String 3]
+  list.removeAt(2);
+  listEntier.sort();
+  print(listEntier);
 }
