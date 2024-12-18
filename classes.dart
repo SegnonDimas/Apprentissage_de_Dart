@@ -1,13 +1,12 @@
 // les classes
 
-class Personne {
+class Personne extends EtreVivant {
   // les attributs
   String nom = '';
-  int age = 0;
   double _soldeBancaire;
 
   //constructeur
-  Personne(this.nom, this.age, this._soldeBancaire);
+  Personne(this.nom, super.age, this._soldeBancaire);
 
   //méthodes
   void presentation() {
@@ -25,6 +24,12 @@ class Personne {
   void set soldeBancaire(double nouveauSoldeBancaire) {
     this._soldeBancaire = nouveauSoldeBancaire;
   }
+
+  //les @overrides
+  @override
+  void seNourrire() {}
+  @override
+  void respirer() {}
 }
 
 class Auteur extends Personne {
@@ -57,4 +62,11 @@ class Auteur extends Personne {
           "Bonjour, je m'appelle $nom, j'ai $age ans et j'ai écrit les ouvrages suivants : $ouvrages");
     }
   }
+}
+
+abstract class EtreVivant {
+  int age;
+  void seNourrire();
+  void respirer();
+  EtreVivant(this.age);
 }
