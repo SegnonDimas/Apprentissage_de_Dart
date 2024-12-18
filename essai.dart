@@ -1,15 +1,9 @@
 import 'classes.dart';
 
 void main() {
-  Personne p1 = Personne("Berlin", 25, 25000000);
+  Personne p1 = Personne("Bob", 23, 15000);
+  Auteur a1 = Auteur('Jean PLIYA', 85, 15000000, []);
 
+  a1.presentation();
   p1.presentation();
-  //p1.age = 30;
-
-  p1.soldeBancaire;
-  p1.soldeBancaire = 200;
-
-  print(p1.soldeBancaire);
-
-  p1.marcher();
 }
