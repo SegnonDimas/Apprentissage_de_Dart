@@ -1,5 +1,5 @@
 void main() {
-  Personne p1 = Personne("Berlin", 25);
+  Personne p1 = Personne(age: 25, nom: "Berlin");
 
   p1.presentation();
   p1.marcher();
@@ -13,7 +13,7 @@ class Personne {
   int age = 0;
 
   //constructeur
-  Personne(this.nom, this.age);
+  Personne({required this.nom, required this.age});
 
   //méthodes
   void presentation() {
